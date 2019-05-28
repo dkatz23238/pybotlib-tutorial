@@ -446,6 +446,8 @@ def run_robot():
 ### run_RPA.py
 
 ```py
+from RPA_activities import *
+
 # Accesses them to ensure they are accessible by our script
 env_vars = (
         MINIO_URI,
