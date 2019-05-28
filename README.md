@@ -97,8 +97,6 @@ version: "3"
 services:
   virtual-desktop:
     image: dorowu/ubuntu-desktop-lxde-vnc:bionic-lxqt
-    volumes:
-      - ./robot:/home/robot
     ports:
       - "5910:5900"
     environment:
@@ -112,8 +110,6 @@ services:
     container_name: minio
     ports:
       - "9000:9000"
-    volumes:
-      - "./minio/data/:/data"
     environment:
       - MINIO_ACCESS_KEY=123456
       - MINIO_SECRET_KEY=password
